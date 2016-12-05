@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Link from 'app/components/Link';
+import Contact from 'app/components/Contact';
 import Nav from 'app/components/navBar';
 
 const Home = () => {
@@ -33,9 +34,7 @@ const Home = () => {
         </a>
         </div>
       </div>
-      <div className="emailPanel">
-        acushing@cs.uml.edu
-      </div>
+       <Contact />
       </div>
     </div>
   </div>);
