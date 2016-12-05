@@ -6,6 +6,7 @@ $grey: #f7f7f9;
 $mediumGrey: grey;
 $black: black;
 $blue: #0099CC;
+$green: #5cb85c;
 $orange: #FF8800;
 $red: #CC0000;
 
@@ -61,6 +62,50 @@ body{
   margin-top: 25px;
 }
 
+.skillTitle{
+    display: flex;
+    align-self: center;
+    justify-content: initial;
+}
+
+.expert{
+    &:hover{
+        cursor: pointer;
+        color: $green;
+    }
+}
+.proficient{
+    &:hover{
+        cursor: pointer;
+        color: $blue;
+    }
+}
+.competent{
+    &:hover{
+        cursor: pointer;
+        color: $orange;
+    }
+}
+
+.list{
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 1em 0;
+    padding: 0;     
+}
+
+.exp{
+    border-top: 1px solid $green;
+}    
+.prof{
+    border-top: 1px solid $blue;
+}    
+.comp{
+    border-top: 1px solid $orange;
+}
+
+
 .flex-Outer{
   margin: 20px;
   display: flex;
@@ -69,13 +114,29 @@ body{
   position: relative;
 }
 
+.contact-outer{
+}
+
 .mainSkills{
   margin: 20px;
+    width: 100%;
+    position: relative;
+  display: flex;
+    align-items: baseline;
+        justify-content: space-around;
 }
 
 .noBorder{
   border: none !important;
   outline: none !important;
+}
+
+.skillBlock{
+    float: right;
+    ul{
+        padding: 0;
+        list-style: none;
+    }
 }
 
 .homeBox{
@@ -163,7 +224,6 @@ body{
   position: absolute;
   left: 0;
   color: $mediumGrey;
-  animation: fadeInUp .6s;
   bottom: 10px;
   text-align: center;
   width: 100%;
